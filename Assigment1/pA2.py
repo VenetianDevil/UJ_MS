@@ -6,14 +6,12 @@ import random as random
 import matplotlib.pyplot as plt
 import numpy as np
 
-u=0
-s2=1
 N = 5000
 X = []
 Y = []
 density = []
-x0 = y0 = 0
-gamma = 1
+x0 = y0 = .3
+gamma = .5
 
 def f(y):
     return (1/(math.pi*gamma*(1+((y-y0)/gamma)**2)))
@@ -28,23 +26,22 @@ def warSum(N, result, u):
         value += (result[i]-u)**2
     return value
 
-while len(X) < N:
-    X.append(random.uniform(0, 1))
-
+X = np.random.normal(y0, gamma, N)
 X = np.sort_complex(X)
 
 for x in X:
     Y.append(F(x))
 
-for y in Y:
-    density.append(f(y))
+for x in X:
+    density.append(f(x))
 
-plt.hist(X, normed=True, bins=20)
-# plt.plot(result, density)
+plt.text(4, 0.6, r'$y_0$ = {}'.format(y0))
+plt.text(4, 0.55, '\u03B3 = {}'.format(gamma))
+plt.hist(Y, range=[-5, 5], density=True, bins=20)
+plt.plot(X, density)
 plt.show()
 
-# avg = sum(result)/N
-# wariancja = 1/N * warSum(N, result, u)
-# # avg = math.avg(result)
-# print("avg = ", avg)
-# print("wariancja = ", wariancja)
+avg = sum(Y)/N
+wariancja = 1/N * warSum(N, Y, avg)
+print("avg = ", avg)
+print("wariancja = ", wariancja)
