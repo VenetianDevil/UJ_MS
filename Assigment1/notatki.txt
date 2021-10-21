@@ -1,0 +1,7 @@
+https://vitaliiur.github.io/teaching/2021-metody-statystyczne/
+
+https://www.wolframalpha.com/widgets/view.jsp?id=9a291be0384002884e8d8b134c89f633
+
+https://docs.python.org/3/library/math.html
+
+https://numpy.org/doc/stable/reference/generated/numpy.sort_complex.html
