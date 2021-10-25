@@ -11,7 +11,7 @@
 * Narysowanie histogramu i porównianie ze wzorem analitycznym dla różnych wartości <img src="https://latex.codecogs.com/gif.latex?y_{0}" title="y_{0}" /> i <img src="https://latex.codecogs.com/gif.latex?\gamma" title="\gamma" /> 
 * Obliczyć eksperymentalne wartości średniej oraz wariancji
 
-##Ruina gracza
+## Ruina gracza
 Ruina gracza dla 2 graczy: gracz **A** z kapitalem początkowym **a** i gracz **B** z kapitalem początkowym **b**. Po każdej rozgrywce wygrywający gracz otrzymuje jedną jednostkę kapitału od przegranego. Nie ma remisów.  - prawdopodobieństwo wygranej gracza A w jednej rozgrywce (dla dwoch graczy <img src="https://latex.codecogs.com/gif.latex?\mathbf{p_{B}=1-p_{A}}" title="\mathbf{p_{B}=1-p_{A}}" />).
 
 Dla każdego z problemów wyniki są pobierane z zaimplementowanej symulacji gry(gier) ruiny gracza.
