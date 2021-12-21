@@ -24,9 +24,9 @@ gr3 = []
 for i in range(0, N):
     tV = 0
     count = 0
-    gr1.append(0);
-    gr2.append(0);
-    gr3.append(0);
+    gr1.append(0)
+    gr2.append(0)
+    gr3.append(0)
     while True:
         n = random.uniform(0,1)
         t_i = (-(math.log(n))/lambd)
